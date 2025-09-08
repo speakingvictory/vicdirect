@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Виктория Духович — Специалист по контекстной рекламе Директолог</title>
+<title>Виктория Духович — Специалист по контекстной рекламе</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
   body {
@@ -18,54 +18,55 @@
     padding: 20px;
     background: #fff0e6; /* пастельно-рыжий фон для блоков */
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3); /* легкий розовый теневой акцент */
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3); /* очень легкий розовый */
   }
-  h1, h2 {
-    color: #d95d7b; /* насыщенный черный */
-    margin-bottom: 10px;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
-  p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  .photo-block {
-    text-align: center;
-    margin: 25px 0;
-  }
-  .photo-block img {
-    width: 180px;
-    height: 180px;
-    border-radius: 90px;
-    border: 3px solid #f5a962; /* пастельно-рыжий бордер */
-    object-fit: cover;
-  }
-  .case-block {
-    background-color: #ffd6cc; /* пастельный светлый оранжево-розовый */
-    padding: 15px 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 30px 0;
-  }
-  .case-block a {
-    color: #d95d7b;
+  header h1 {
     font-weight: 700;
-    text-decoration: none;
-    font-size: 1.1em;
+    font-size: 2.2em;
+    color: #000; /* черный заголовок */
+    margin: 0;
   }
-  .case-block a:hover {
-    text-decoration: underline;
+  header p {
+    font-weight: 600;
+    font-size: 1em;
+    color: #000; /* черный */
+    margin: 4px 0 0 0;
+  }
+  .photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border: 3px solid #f5a962; /* пастельно-рыжий */
+    object-fit: cover;
+    margin-left: 20px;
+  }
+  section {
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    background: #fff; /* белый фон для секций */
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(255, 182, 193, 0.15);
+  }
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #000; /* черный заголовок */
+  }
+  p, li {
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-weight: 400;
   }
   ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  li {
-    margin-bottom: 8px;
-  }
-  .section {
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #f9c7d2;
+    padding-left: 20px;
+    margin: 0;
   }
   .skills-list {
     display: flex;
@@ -75,67 +76,93 @@
     flex: 1 1 45%;
     margin-bottom: 8px;
   }
-  @media (max-width: 480px) {
-    .skills-list li {
-      flex: 1 1 100%;
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
     }
-    .photo-block img {
+    .photo {
+      margin: 15px 0 0 0;
       width: 140px;
       height: 140px;
       border-radius: 70px;
     }
+    .skills-list li {
+      flex: 1 1 100%;
+    }
+  }
+  .button {
+    display: inline-block;
+    background-color: #d95d7b; /* насыщенный розовый */
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  .button:hover {
+    background-color: #f4708a;
+  }
+  .contact a {
+    color: #d95d7b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact a:hover {
+    text-decoration: underline;
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <h1>Виктория Духович</h1>
-  <p><strong>Специалист по контекстной рекламе | Директолог </strong></p>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Виктория Духович</h1>
+        <p>Специалист по контекстной рекламе | Директолог </p>
+      </div>
+      <img src="screenshots/Снимок экрана 2025-07-21 в 16.41.23.png" alt="Фото Виктории Духович" class="photo" />
+      <!-- Замените your_photo.jpg на путь к вашему фото -->
+    </header>
 
-  <div class="photo-block">
-    <!-- Вставьте здесь свое фото -->
-    <img src="Снимок экрана 2025-07-21 в 16.41.23.png" alt="Виктория Духович" />
-  </div>
+    <section>
 
-  <div class="section">
-    <h2>Обо мне</h2>
-    <p>Я специалист по контекстной рекламе с опытом более 1,5 года, работала с проектами в B2C и B2B, включая онлайн-школы, IT, онлайн-магазины, образование и элитную недвижимость. Мой профессиональный фокус — полный цикл работы: от аудита и сбора семантического ядра до настройки сквозной аналитики с составными целями и JavaScript-событиями, а также постоянная оптимизация и масштабирование кампаний. За счет этого я добивалась значимых результатов — снижала стоимость лида на 37%, повышала CTR до 24%, увеличивала ROI свыше 400%, рост продаж и среднего чека в проектах. Использую аналитику Яндекс.Метрики, инструментов Яндекс.Директа, сегменты и корректировки Аудиторий, A/B тестирование и продвинутый ретаргетинг, что позволяет максимально эффективно расходовать бюджет и достигать бизнес-целей. Больше всего в своей работе люблю системность, возможность влиять на показатели на разных этапах и масштабироваться - ведь нельзя настроить рекламу по шаблону, всегда нужны корректировки, даже в 1 нише. а не просто запустить рекламу. </p>
-  </div>
+    <section>
+      <h2>Обо мне</h2>
+      <p>Специалист по контекстной рекламе с опытом более 1,5 года, работала с проектами в B2C и B2B, включая онлайн-школы, IT, онлайн-магазины, образование и элитную недвижимость. <br> Фокус — полный цикл работы: от аудита и сбора семантического ядра до оптимизации аналитики с составными целями и JavaScript-событиями, масштабирование кампаний. Результаты - снизила стоимость лида на 37%, повысила CTR до 24%, увеличила ROI свыше 400%, рост продаж и среднего чека. <br>Использую аналитику Яндекс.Метрики, Яндекс.Директа, сегменты и корректировки Аудиторий, A/B тестирование и продвинутый ретаргетинг = эффективный расход бюджета и достижение бизнес-целей. <br> Больше всего в своей работе люблю системность, возможность влиять на показатели на разных этапах и масштабироваться - ведь нельзя настроить рекламу по шаблону, всегда нужны корректировки, даже в 1 нише. а не просто запустить рекламу.</p>
+    </section>
 
-  <div class="section">
-    <h2>Ключевые навыки</h2>
-    <ul class="skills-list">
-      <li>Яндекс.Директ (Ручная настройка в ЕПК, Корректировки, Библиотеки, Сегменты)</li>
-      <li>Яндекс.Метрика, Tag Manager, Яндекс.Аудитории, UTM-метки</li>
-      <li>A/B тестирование креативов и сегментации</li>
-      <li>Составные цели, JavaScript-события</li>
-      <li>Сегментация и ретаргетинг, Look-alike аудитории</li>
-      <li>Сбор и оптимизация семантического ядра</li>
-      <li>Медиапланирование, бюджет и стратегия</li>
-      <li>Анализ воронки продаж и моделей атрибуции</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Ключевые навыки</h2>
+      <ul class="skills-list">
+        <li>Яндекс.Директ (Поиск, РСЯ, ЕПК)</li>
+        <li>Яндекс.Метрика, Tag Manager, UTM-метки</li>
+        <li>A/B тестирование креативов и сегментации</li>
+        <li>Составные цели, JavaScript-события</li>
+        <li>Сегментация и ретаргетинг, Look-alike аудитории</li>
+        <li>Сбор и оптимизация семантического ядра</li>
+        <li>Медиапланирование и бюджетирование</li>
+        <li>Анализ воронки продаж и моделей атрибуции</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Основные достижения</h2>
-    <ul>
-      <li>Оптимизировала кампанию элитной недвижимости — снизила стоимость лида на 37%, подняла CTR на 24%, увеличила продажи на 11% и средний чек на 15%.</li>
-      <li>В онлайн-магазине снизила стоимость лида на 60%, подняла CTR на 18%, обеспечила ROI 430% за 1 месяц.</li>
-      <li>Для IT-курсов английского увеличила CTR на 22% через сегментацию и A/B тесты в РСЯ с конверсионным фокусом.</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Основные достижения</h2>
+      <ul>
+        <li>Оптимизировала кампанию элитной недвижимости — снизила стоимость лида на 37%, подняла CTR на 24%, увеличила продажи на 11% и средний чек на 15%.</li>
+        <li>В онлайн-магазине снизила стоимость лида на 60%, подняла CTR на 18%, обеспечила ROI 430% за 1 месяц.</li>
+        <li>Для IT-курсов увеличила CTR на 22% через сегментацию и A/B тесты в РСЯ с конверсионным фокусом.</li>
+      </ul>
+      <a href="https://disk.yandex.ru/d/228Pe8rqE9NWzQ" target="_blank" rel="noopener noreferrer" class="button">Посмотреть кейс медипланирования</a>
+    </section>
 
-  <div class="case-block">
-    <!-- Вставьте сюда ссылку на кейс -->
-    <a href="https://disk.yandex.ru/d/228Pe8rqE9NWzQ" target="_blank" rel="noopener noreferrer">Полный цикл настройки рекламы — кейс онлайн-магазина</a>
+    <section class="contact">
+      <h2>Контакты</h2>
+      <p>Телефон: <a href="tel:+79777691790">+7 (977) 769-1790</a></p>
+      <p>Email: <a href="mailto:speakingvictory23@gmail.com">speakingvictory23@gmail.com</a></p>
+      <p>TГ: <a href="https://t.me/speaking_victory" target="_blank">@speaking_victory</a></p>
+    </section>
   </div>
-
-  <div class="section contact">
-    <h2>Контакты</h2>
-    <p>Телефон: <a href="tel:+79777691790">+7 (977) 769-1790</a></p>
-    <p>Email: <a href="mailto:speakingvictory23@gmail.com">speakingvictory23@gmail.com</a></p>
-    <p>TГ: <a href="https://t.me/speaking_victory" target="_blank">@speaking_victory</a></p>
-  </div>
-</div>
 </body>
 </html>
